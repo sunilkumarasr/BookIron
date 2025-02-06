@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/_220dp"
+            android:src="@drawable/img_signup"
+            android:contentDescription="@string/login"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_220dp"/>
+
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/logincreate_new_account"
+            android:textColor="@color/color_skip"
+            android:textSize="@dimen/_18sp"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/ceate_account_sothat"
+            android:textSize="@dimen/_16sp"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_name"
+            style="@style/style_edittext"
+            android:hint="@string/enter_fullname"
+            android:inputType="text"
+            android:maxLength="20"
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_phone"
+            style="@style/style_edittext"
+            android:hint="@string/enter_phone_number"
+            android:inputType="phone"
+            android:maxLength="10"
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_password"
+            style="@style/style_edittext"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_conf_password"
+            style="@style/style_edittext"
+            android:hint="@string/conf_password"
+            android:inputType="textPassword"
+
+
+            />
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                style="@style/style_button"
+                android:layout_gravity="center"
+                android:text="@string/register"
+                android:onClick="register"
+
+                />
+
+    </LinearLayout>
+
+</ScrollView>

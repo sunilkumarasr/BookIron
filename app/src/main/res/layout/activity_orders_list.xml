@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        app:elevation="@dimen/_0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+android:minHeight="?attr/actionBarSize"
+            android:paddingLeft="@dimen/_16dp"
+            android:paddingRight="@dimen/_16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lnr_back"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/img_arrow_left"
+                    />
+            </LinearLayout>
+            <TextView style="@style/style_textview"
+                android:text="@string/orderlist"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/color_service_title"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center"
+
+            android:paddingLeft="@dimen/_16dp"
+            android:paddingRight="@dimen/_16dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabIndicator="@null"
+            app:tabPaddingBottom="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="5dp"
+            app:tabPaddingTop="0dp"
+            app:tabMode="scrollable"
+
+            android:elevation="@dimen/_0dp"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingRight="@dimen/_16dp"
+        android:layout_margin="@dimen/_16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:minHeight="@dimen/_100dp"
+        app:elevation="@dimen/_15dp"
+        android:layout_marginBottom="-5dp"
+        app:cardCornerRadius="@dimen/_20dp"
+        android:elevation="@dimen/_20dp"
+        app:cardBackgroundColor="@color/white"
+        android:paddingLeft="@dimen/_32dp"
+        android:paddingRight="@dimen/_32dp"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingBottom="@dimen/_8dp"
+        android:background="@drawable/rectangle_shadow"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_total"
+                    android:layout_width="@dimen/_36dp"
+                    android:layout_height="@dimen/_36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:src="@drawable/img_order_total"
+                    app:tint="@color/pink"/>
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_total"
+                    android:minWidth="@dimen/_80dp"
+                    android:layout_toRightOf="@+id/img_total"
+                    android:gravity="left"
+                    android:text="Total"
+                    android:fontFamily="@font/roboto_regular"
+
+                    />
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_start_date"
+                    android:layout_below="@+id/txt_total"
+                    android:minWidth="@dimen/_80dp"
+                    android:gravity="left"
+                    android:layout_toRightOf="@+id/img_total"
+                    android:textSize="@dimen/_18sp"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:text="16 Items"
+                    />
+
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_cost"
+                    android:minWidth="@dimen/_80dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="Cost"
+
+                    android:fontFamily="@font/roboto_regular"
+
+                    />
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_cost_no"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_cost"
+                    android:minWidth="@dimen/_80dp"
+                    android:gravity="right"
+                    android:text="₹ 18"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/_18sp"
+                    />
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/style_button"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:text="@string/confirm_order"
+                android:onClick="confirmOrder"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/_220dp"
+            android:src="@drawable/img_otp"
+            android:contentDescription="@string/login"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_220dp"/>
+
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/otp_header"
+            android:textColor="@color/color_skip"
+            android:textSize="@dimen/_18sp"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/otp_has_been"
+            android:textSize="@dimen/_16sp"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/style_otpedittext"
+        android:id="@+id/otp_one"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/otp_two"
+        style="@style/style_otpedittext"
+        android:layout_width="47dp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/style_otpedittext"
+        android:id="@+id/otp_three"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/style_otpedittext"
+        android:id="@+id/otp_four"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/style_otpedittext"
+        android:id="@+id/otp_five"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/style_otpedittext"
+        android:id="@+id/otp_six"
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="didnotreceive"
+            android:layout_height="wrap_content">
+            <com.royalit.mfd.customviews.CustomTextView
+                style="@style/style_textview"
+                android:textColor="@color/color_edittext"
+                android:padding="@dimen/_8dp"
+
+                android:textSize="@dimen/_16sp"
+                android:text="@string/donreceive"
+                android:layout_margin="@dimen/_0dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                />
+            <com.royalit.mfd.customviews.CustomTextView
+                style="@style/style_textview"
+                android:textColor="@color/blue"
+                android:padding="@dimen/_0dp"
+                android:textSize="@dimen/_16sp"
+                android:text="@string/sendagain"
+                android:layout_margin="@dimen/_0dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            style="@style/style_button"
+            android:layout_gravity="center"
+            android:text="@string/verify"
+            android:onClick="otpVerify"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

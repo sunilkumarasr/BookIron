@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">MFD</string>
+    <string name="skip">Skip</string>
+    <string name="perfect_equipement">Perfect Equipment</string>
+    <string name="text_one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iusto, velit? Voluptates ex molestias excepturi, dolorum magni qui eius non, repellat id consequuntur, eos magnam sit fuga? Delectus error, beatae.</string>
+    <string name="text_two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iusto, velit? Voluptates ex molestias excepturi, dolorum magni qui eius non, repellat id consequuntur, eos magnam sit fuga? Delectus error, beatae.</string>
+    <string name="alltypes_of_cloths">All type of Clothes</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">Fogot password?</string>
+    <string name="login">Login</string>
+    <string name="youcanalso">You can also login with</string>
+    <string name="donthaveaccount">Don\'t have an account?</string>
+    <string name="signupnow">Sign up now</string>
+    <string name="fbdescription">FB Description</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="logincreate_new_account">Create New Account</string>
+    <string name="ceate_account_sothat">Create an account so you can manage your personal finance</string>
+    <string name="otp_header">OTP</string>
+    <string name="otp_has_been">OTP has seen to your registed phone number. Please verify</string>
+    <string name="verify">Verify</string>
+    <string name="sendagain">Send again</string>
+    <string name="donreceive">Didn’t recieved OTP ?</string>
+    <string name="send">Send</string>
+    <string name="update">Update</string>
+    <string name="ordernow">Book Now</string>
+    <string name="ServiceCategories">Service Categories</string>
+    <string name="ActiveOrders">Active Orders</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">HOME</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Orders">ORDERS</string>
+    <string name="profile">PROFILE</string>
+    <string name="services">SERVICES</string>
+    <string name="title_activity_orders_list">OrdersListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="addItem">Add Item</string>
+    <string name="orderlist">Product List</string>
+    <string name="mycart">My Cart</string>
+    <string name="pricdetails">"Price details "</string>
+    <string name="subtotal">Sub Total</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="shippingPayment"><![CDATA[Shipping & Payment]]></string>
+    <string name="shippingshedule">Shipping Schedule</string>
+    <string name="pickuptime">Pickup Time</string>
+    <string name="droptime">Delivery Time</string>
+    <string name="addAddress">Add Address</string>
+    <string name="hno">H no.</string>
+    <string name="nearestlocation">Nearest Location</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="Country">Country</string>
+    <string name="paynow">Pay Now</string>
+    <string name="your_order_confirmed">Your Order has been confirmed</string>
+    <string name="your_order_id">Your Order ID #0000123</string>
+    <string name="savecontinue"><![CDATA[Save & Continue]]></string>
+    <string name="myprofile">My Profile</string>
+    <string name="AccountInfo">Account Info</string>
+    <string name="MyAddress">My Address</string>
+    <string name="changepassword">Change Password</string>
+    <string name="others">Others</string>
+    <string name="AboutUs">About Us</string>
+    <string name="ContactUs">Contact Us</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="termcondition"><![CDATA[Terms & Conditions]]></string>
+    <string name="logout">Logout</string>
+    <string name="myorders">My Orders</string>
+    <string name="orderid">Order ID</string>
+    <string name="date">Date</string>
+    <string name="deliveryoption">Delivery Option</string>
+    <string name="payableamount">Payable Amount</string>
+    <string name="status">Status</string>
+    <string name="PaymentStatus">Payment Status</string>
+    <string name="orderDetails">Order Details</string>
+    <string name="thanksforchoose">Thank you for choosing Us!</string>
+    <string name="yourpickup">Your pickup has been confirmed</string>
+    <string name="orderstatus">Order Status</string>
+    <string name="newpassword">New Password</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="submit">Submit</string>
+    <string name="saveaddress">Save Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="selectAddress">My Address List</string>
+    <string name="choosePaymentType">Choose Payment Type</string>
+    <string name="online">Online</string>
+    <string name="cod">COD</string>
+    <string name="enter_fullname">Enter Full Name</string>
+    <string name="update_profile">Update Profile</string>
+</resources>

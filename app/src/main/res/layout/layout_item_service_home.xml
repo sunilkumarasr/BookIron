@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_8dp"
+
+    app:cardCornerRadius="@dimen/_5dp"
+    android:elevation="@dimen/_5dp"
+    app:cardElevation="@dimen/_8dp"
+    app:strokeColor="@color/color_button_bg"
+    app:strokeWidth="1dp"
+    android:layout_gravity="center"
+    android:layout_marginRight="@dimen/_8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_service"
+            android:layout_width="@dimen/_120dp"
+            android:layout_height="@dimen/_120dp"
+            android:layout_margin="@dimen/_8dp"
+            android:src="@drawable/img_wash"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            android:id="@+id/txt_title"
+            style="@style/style_textview"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_0dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:minHeight="@dimen/_20dp"
+            android:text="Iron"
+            android:textColor="@color/color_service_title"
+            android:textSize="@dimen/_18sp" />
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

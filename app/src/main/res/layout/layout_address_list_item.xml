@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8dp"
+    app:contentPadding="@dimen/_12dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="30dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_height="30dp"/>
+
+            <CheckedTextView
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/style_textview_small"
+
+                />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

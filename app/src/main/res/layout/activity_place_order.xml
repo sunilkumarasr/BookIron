@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".views.cart.PlaceOrderActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_250dp"
+        android:src="@drawable/img_order_placed"/>
+    <com.royalit.mfd.customviews.CustomTextView
+        style="@style/style_textview"
+        android:gravity="center"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/color_order_date"
+        android:text="@string/your_order_confirmed"
+        />
+    <com.royalit.mfd.customviews.CustomTextView
+        android:id="@+id/txt_orderId"
+        style="@style/style_textview"
+        android:gravity="center"
+        android:textSize="@dimen/_22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/color_order_date"
+        android:text="@string/your_order_id"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/style_button"
+        android:layout_margin="@dimen/_32dp"
+        android:padding="@dimen/_8dp"
+        android:onClick="savec"
+        android:text="@string/savecontinue"
+        />
+
+</LinearLayout>

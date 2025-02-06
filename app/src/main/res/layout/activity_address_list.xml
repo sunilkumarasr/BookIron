@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_16dp"
+            android:paddingRight="@dimen/_16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lnr_back"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_8dp"
+                android:onClick="back"
+                android:paddingBottom="@dimen/_8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/img_arrow_left"
+                    />
+            </LinearLayout>
+            <TextView style="@style/style_textview"
+                android:text="@string/selectAddress"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/color_service_title"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_address"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        style="@style/style_button"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingBottom="@dimen/_8dp"
+        android:text="@string/submit"
+        android:onClick="submit"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/_20dp"
+        android:contentDescription="@string/app_name"
+        app:borderWidth="@dimen/_0dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_constraintEnd_toStartOf="@+id/bottomAppBar"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:maxImageSize="@dimen/_80dp"
+        app:srcCompat="@drawable/icon_plus__1"
+        app:tint="@null" />
+</LinearLayout>

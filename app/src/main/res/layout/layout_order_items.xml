@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white_5"
+    android:orientation="vertical"
+    android:padding="@dimen/_8dp"
+    android:layout_margin="@dimen/_5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_txt_orderid"
+            android:text="@string/orderid"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_orderid"
+            android:text="#0000123"
+            android:textStyle="bold"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_txt_date"
+            android:text="@string/date"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_date"
+            android:text="23 Jan, 2023"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_txt_deliveryOption"
+            android:text="@string/deliveryoption"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_payment_option"
+            android:text="Online Payment"
+            android:textColor="@color/color_button_bg"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_txt_payable_amount"
+            android:text="@string/payableamount"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_payable_amount"
+            android:text="₹123.25"
+            android:textColor="@color/color_skip"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_txt_status"
+            android:text="@string/status"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_order_status"
+            android:text="Pending"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_txt_payment_status"
+            android:text="@string/PaymentStatus"
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_payment_status"
+            android:text="Paid"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        />
+    <LinearLayout
+        android:id="@+id/lnr_location"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3dp"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_24dp"
+            android:layout_height="@dimen/_24dp"
+            android:layout_marginRight="@dimen/_12dp"
+            android:src="@drawable/img_location"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview_small"
+            android:id="@+id/txt_address"
+            android:text="CT7B, The Sparks,...."
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/_18sp"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+
+             />
+        <ImageView
+            android:layout_width="@dimen/_24dp"
+            android:layout_height="@dimen/_24dp"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:src="@drawable/img_arrow_a"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

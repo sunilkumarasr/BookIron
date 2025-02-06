@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!--these items will be always visible
+         on the Bottom navigation bar-->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/img_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/img_service"
+        android:title="@string/services"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/img_orders"
+        android:title="@string/Orders" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/img_accounts"
+        android:title="@string/profile"
+        app:showAsAction="always" />
+    <!--these items will be under the more
+        button of the Bottom navigation bar-->
+
+
+</menu>

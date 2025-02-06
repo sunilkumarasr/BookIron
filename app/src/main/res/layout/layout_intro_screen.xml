@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="0.8"
+       android:weightSum="2"
+       android:orientation="vertical"
+       >
+       <ImageView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/top_logo"
+           android:layout_marginBottom="-12dp"
+           />
+
+       <ImageView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="180dp"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/intro_two"
+           />
+
+   </LinearLayout>
+    <com.royalit.mfd.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_regular"
+
+        android:layout_gravity="center_horizontal"
+        android:text="@string/alltypes_of_cloths"
+        />
+    <com.royalit.mfd.customviews.CustomTextView
+        android:layout_weight="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_two"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        />
+
+
+</LinearLayout>

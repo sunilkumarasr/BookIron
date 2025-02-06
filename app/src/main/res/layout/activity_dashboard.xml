@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    >
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_dashboard"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation" />
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:fabAlignmentMode="center"
+        app:fabAnchorMode="cradle"
+        app:fabCradleMargin="12dp"
+        app:fabCradleRoundedCornerRadius="@dimen/_12dp"
+        app:fabCradleVerticalOffset="1dp"
+        app:itemIconSize="@dimen/_42dp" >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:labelVisibilityMode="labeled"
+
+            android:background="@color/transparent"
+            app:backgroundTint="@color/transparent"
+            app:menu="@menu/bottom_menu"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:contentDescription="@string/app_name"
+        app:borderWidth="@dimen/_0dp"
+        android:backgroundTint="@color/color_button_bg"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_constraintEnd_toStartOf="@+id/bottomAppBar"
+        app:layout_constraintTop_toBottomOf="parent"
+
+
+        app:srcCompat="@drawable/cart"
+        app:tint="@null" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

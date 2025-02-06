@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+      <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_16dp"
+            android:paddingRight="@dimen/_16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lnr_back"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_8dp"
+                android:onClick="back"
+                android:paddingBottom="@dimen/_8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/img_arrow_left"
+                    />
+            </LinearLayout>
+            <TextView style="@style/style_textview"
+                android:text="@string/shippingPayment"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/color_service_title"
+                />
+        </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_margin="@dimen/_16dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.royalit.mfd.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/shippingshedule"
+        android:textColor="@color/color_skip"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_24dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_pickup"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/pickuptime"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/edit_calendar_24"
+            >
+
+            <EditText
+                android:id="@+id/input_pickip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:onClick="pickuptime"
+                android:focusable="false"
+                android:textSize="@dimen/_16sp"
+
+                android:fontFamily="@font/roboto_regular"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:text=" "
+                android:minLines="2"
+                android:minHeight="40dp"
+                android:hint="@string/pickuptime" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_drop"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/droptime"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/edit_calendar_24"
+            >
+
+            <EditText
+                android:id="@+id/input_drop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:onClick="droptime"
+                android:minHeight="40dp"
+                android:singleLine="false"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:minLines="2"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+
+               />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.royalit.mfd.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/addAddress"
+        android:layout_margin="@dimen/_0dp"
+        android:textColor="@color/color_cart_price"
+        />
+    <com.royalit.mfd.customviews.CustomTextView
+        android:id="@+id/txt_selected_address"
+        style="@style/style_textview_small"
+        android:text=""
+        android:layout_margin="@dimen/_0dp"
+        android:textColor="@color/color_cart_price"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_address"
+        style="@style/style_button"
+        android:background="@drawable/rectangle_button_border"
+        android:text="+"
+        android:textColor="@color/color_button_bg"
+        android:textSize="40sp" />
+    <View android:layout_width="1dp" android:layout_height="@dimen/_20dp"/>
+
+    <com.royalit.mfd.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/choosePaymentType"
+        android:layout_margin="@dimen/_0dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="@color/color_cart_price"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        >
+        <RadioButton
+            android:id="@+id/radio_cash"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/_12sp"
+            android:text="@string/cod"
+            android:textSize="@dimen/_20sp"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/radio_online"
+            android:layout_width="wrap_content"
+            android:text="@string/online"
+            android:textSize="@dimen/_20sp"
+            android:paddingLeft="@dimen/_12sp"
+            android:layout_height="wrap_content"
+            />
+
+    </RadioGroup>
+</LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:minHeight="@dimen/_100dp"
+        app:elevation="@dimen/_15dp"
+        android:layout_marginBottom="-5dp"
+        app:cardCornerRadius="@dimen/_20dp"
+        android:elevation="@dimen/_20dp"
+        app:cardBackgroundColor="@color/white"
+        android:paddingLeft="@dimen/_32dp"
+        android:paddingRight="@dimen/_32dp"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingBottom="@dimen/_8dp"
+        android:background="@drawable/rectangle_shadow"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_total_payable"
+
+                    android:minWidth="@dimen/_80dp"
+                    android:textSize="@dimen/_20sp"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:text="Total Payable"
+                    />
+
+
+
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_cost_no"
+                    android:layout_alignParentRight="true"
+                    android:minWidth="@dimen/_80dp"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:text="₹250.52"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/_18sp"
+                    />
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/style_button"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:text="@string/paynow"
+                android:onClick="paynow"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

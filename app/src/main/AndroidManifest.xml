@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookIron"
+        tools:targetApi="31">
+        <activity
+            android:name=".views.ui.account.AccountInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.cart.AddressListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.cart.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.products.ProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ui.ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".views.orders.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.cart.PlaceOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.cart.ShippingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.products.OrdersListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_orders_list"
+            android:theme="@style/Theme.BookIron" />
+        <activity
+            android:name=".views.home.DashboardActivity"
+            android:exported="true"
+            android:label="@string/title_activity_dashboard">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".views.home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".views.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ForgotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.OTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.SigupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.IntroscreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

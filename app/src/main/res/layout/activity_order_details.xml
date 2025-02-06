@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".views.orders.OrderDetailsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_16dp"
+            android:paddingRight="@dimen/_16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lnr_back"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/img_arrow_left"
+                    />
+            </LinearLayout>
+            <TextView style="@style/style_textview"
+                android:text="@string/orderDetails"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textSize="@dimen/_24sp"
+                android:textColor="@color/color_service_title"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="@dimen/_120dp"
+        android:src="@drawable/img_order_details" />
+
+    <com.royalit.mfd.customviews.CustomTextView
+        style="@style/style_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thanksforchoose"
+        android:textColor="@color/color_skip"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat_regular" />
+    <com.royalit.mfd.customviews.CustomTextView
+        style="@style/style_textview_small"
+        android:layout_width="wrap_content"
+        app:fontFamily="@font/montserrat_regular"
+        android:text="@string/yourpickup"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_16dp"
+        android:padding="@dimen/_12dp"
+        android:background="@drawable/rectangle_order_border"
+        android:layout_weight="1"
+        >
+        <com.royalit.mfd.customviews.CustomTextView
+            android:id="@+id/txt_order_id"
+            style="@style/style_textview_small"
+            android:text=""
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto_regular"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            android:id="@+id/txt_order_date"
+            style="@style/style_textview_small"
+            android:text=""
+            android:textSize="@dimen/_8sp"
+            app:fontFamily="@font/roboto_regular"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@color/color_divider"
+            />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_orderDetails"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@color/color_divider" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/style_textview_small"
+                android:id="@+id/txt_txt_sub_total"
+                android:minWidth="@dimen/_80dp"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/subtotal" />
+
+            <TextView
+                android:id="@+id/txt_sub_total"
+                style="@style/style_textview_small"
+                android:layout_width="68dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="right"
+                android:minWidth="@dimen/_80dp"
+                android:text=""
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/style_textview_small"
+                android:id="@+id/txt_txt_tax"
+                android:minWidth="@dimen/_80dp"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/tax" />
+
+            <TextView
+                android:id="@+id/txt_tax"
+                style="@style/style_textview_small"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="right"
+                android:minWidth="@dimen/_80dp"
+                android:text=""
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@color/color_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/style_textview_small"
+                android:id="@+id/txt_total_payable"
+                android:minWidth="@dimen/_80dp"
+                android:textSize="@dimen/_20sp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/total" />
+
+            <TextView style="@style/style_textview_small"
+                android:id="@+id/txt_cost_no"
+                android:layout_alignParentRight="true"
+                android:minWidth="@dimen/_80dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/color_button_bg"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/_18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="@dimen/_16dp"
+       android:padding="@dimen/_8dp"
+       android:visibility="visible">
+       <com.royalit.mfd.customviews.CustomTextView
+           style="@style/style_textview"
+           android:id="@+id/txt_order_status"
+           android:text=""
+           android:gravity="center"
+           android:layout_margin="@dimen/_0dp" />
+   </LinearLayout>
+
+</LinearLayout>

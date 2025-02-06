@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8dp"
+    app:cardCornerRadius="@dimen/_8dp"
+    app:contentPadding="@dimen/_8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/_36dp"
+            android:layout_height="@dimen/_36dp"
+            android:layout_margin="@dimen/_5dp"
+            android:src="@drawable/img_shirt"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_marginRight="@dimen/_5dp"
+            android:orientation="vertical"
+            >
+            <com.royalit.mfd.customviews.CustomTextView
+                android:id="@+id/txt_prodcut_name"
+                style="@style/style_textview"
+                android:layout_width="wrap_content"
+                android:text="T-Shirt"
+                android:layout_marginLeft="@dimen/_0dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/color_1d"
+                android:textSize="@dimen/_18sp"
+                />
+            <com.royalit.mfd.customviews.CustomTextView
+                android:id="@+id/txt_prodcut_desc"
+                style="@style/style_textview_small"
+                android:layout_width="wrap_content"
+                android:text="Lorem Ipsum has been the industry's standard"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_3dp"
+                android:layout_height="wrap_content">
+                <TextView style="@style/style_textview_small"
+                    android:id="@+id/txt_net_price"
+                    android:minWidth="@dimen/_80dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textStyle="bold"
+                    android:text="₹91.56/item"
+                    android:textSize="@dimen/_16sp"
+                    android:textColor="@color/color_cart_price"
+
+                    android:layout_weight="1"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:id="@+id/lnr_minus_item"
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/_5dp"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_32dp"
+                            android:layout_height="@dimen/_32dp"
+                            android:src="@drawable/img_minus"
+                            />
+                    </LinearLayout>
+                    <com.royalit.mfd.customviews.CustomTextView
+                        android:id="@+id/txt_item_count"
+                        style="@style/style_textview"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:layout_gravity="center"
+                        android:minWidth="@dimen/_20dp"
+                        android:textColor="@color/color_1d"
+                        />
+                    <LinearLayout
+                        android:id="@+id/lnr_add_item"
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/_5dp"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_5dp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/_32dp"
+                        android:layout_height="@dimen/_32dp"
+                        android:src="@drawable/img_add"
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

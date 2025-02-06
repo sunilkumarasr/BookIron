@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.royalit.mfd.views.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.royalit.mfd.views.orders.OrdersFragment"
+        android:label="@string/Orders"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.royalit.mfd.views.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.royalit.mfd.views.ui.account.AccountFragment"
+        android:label="@string/myprofile"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.royalit.mfd.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>

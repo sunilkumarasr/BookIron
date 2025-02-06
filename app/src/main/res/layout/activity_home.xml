@@ -1,0 +1,195 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.home.HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="@dimen/_8dp"
+    android:layout_marginRight="@dimen/_8dp"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_42dp"
+        android:layout_height="@dimen/_42dp"
+        android:src="@drawable/img_hi"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_marginRight="@dimen/_8dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            android:id="@+id/txt_name"
+            style="@style/style_textview"
+            android:text="Hi, Uoc Nguyen"
+            android:textColor="@color/color_home_header_color"
+            android:layout_margin="@dimen/_2dp"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            android:id="@+id/txt_points"
+            style="@style/style_textview"
+            android:text="Gold member Total: 100 points"
+            android:textSize="@dimen/_14sp"
+            android:layout_margin="@dimen/_2dp"
+            android:textColor="@color/color_home_header_color"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="@dimen/_42dp"
+        android:layout_height="@dimen/_42dp"
+        android:src="@drawable/img_profile"
+        />
+</LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_8dp"
+    android:layout_marginTop="@dimen/_16dp"
+    android:orientation="horizontal"
+    android:background="@drawable/rectangle_banner"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_120dp"
+        android:src="@drawable/img_home_banner"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_8dp"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/_120dp"
+        android:layout_height="wrap_content">
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="40% OFF"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/_0dp"
+            android:minHeight="@dimen/_20dp"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="First order"
+            android:minHeight="@dimen/_20dp"
+            android:layout_margin="@dimen/_2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sp"
+            />
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/ordernow"
+            android:minEms="5"
+            android:gravity="center"
+            android:minHeight="@dimen/_20dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sp"
+            android:background="@drawable/rectangle_booknow"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_8dp"
+            android:layout_height="match_parent">
+            <com.royalit.mfd.customviews.CustomTextView
+                style="@style/style_textview"
+                android:text="@string/ServiceCategories"
+                android:layout_marginTop="@dimen/_12dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_2dp"
+                android:minHeight="@dimen/_80dp"
+                />
+            <com.royalit.mfd.customviews.CustomTextView
+                style="@style/style_textview"
+                android:text="@string/ActiveOrders"
+                android:layout_marginTop="@dimen/_12dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_activeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dp"
+                android:layout_marginBottom="?attr/actionBarSize"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+    <!--the usual bottom navigation bar with items-->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+
+        app:fabAnchorMode="cradle"
+        android:background="@color/red"
+        app:fabCradleRoundedCornerRadius="@dimen/_12dp"
+        app:paddingRightSystemWindowInsets="false"
+        app:itemIconSize="@dimen/_42dp"
+        app:fabCradleMargin="16dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:fabCradleVerticalOffset="1dp"
+     >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_0dp"
+            android:padding="@dimen/_0dp"
+            app:elevation="@dimen/_0dp"
+            android:background="@color/transparent"
+           app:backgroundTint="@color/transparent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!--the normal Floating action button which is
+        anchored to the bottom navigation button-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:borderWidth="@dimen/_0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        app:maxImageSize="@dimen/_120dp"
+        android:layout_marginBottom="@dimen/_30dp"
+        app:srcCompat="@drawable/icon_plus__1"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@null"
+         />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

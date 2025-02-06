@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".views.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_width="@dimen/_220dp"
+        android:src="@drawable/img_login"
+        android:contentDescription="@string/login"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/_220dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_phone"
+            style="@style/style_edittext"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="10"
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_password"
+            style="@style/style_edittext"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+
+
+            />
+
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:layout_gravity="end"
+            android:padding="@dimen/_8dp"
+            android:text="@string/forgotpassword"
+            android:layout_width="wrap_content"
+            android:onClick="forgotpass"
+            />
+
+        <LinearLayout style="@style/style_button"
+            android:gravity="center"
+            android:onClick="login"
+            >
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/style_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:clickable="false"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:text="@string/login"
+
+            />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:src="@drawable/img_arrow_right"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_16dp"
+    android:layout_height="wrap_content">
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:background="@color/color_divider"/>
+</LinearLayout>
+        <com.royalit.mfd.customviews.CustomTextView
+            style="@style/style_textview"
+            android:textColor="@color/color_edittext"
+            android:padding="@dimen/_8dp"
+            android:text="@string/youcanalso"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_42dp"
+                android:src="@drawable/fb"
+                app:tint="@color/pink"
+                android:contentDescription="@string/fbdescription"
+                android:onClick="fbclick"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_42dp"/>
+            <View
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_8dp"
+                />
+            <ImageView
+                android:layout_width="@dimen/_42dp"
+                android:src="@drawable/gmail"
+                app:tint="@color/pink"
+                android:contentDescription="@string/fbdescription"
+android:onClick="gmailClikc"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_42dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_42dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="register"
+            android:layout_height="wrap_content">
+            <com.royalit.mfd.customviews.CustomTextView
+                style="@style/style_textview"
+                android:textColor="@color/color_edittext"
+                android:padding="@dimen/_8dp"
+                android:textSize="@dimen/_16sp"
+                android:text="@string/donthaveaccount"
+                android:layout_margin="@dimen/_0dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                />
+            <com.royalit.mfd.customviews.CustomTextView
+                style="@style/style_textview"
+                android:textColor="@color/color_skip"
+                android:padding="@dimen/_0dp"
+                android:textSize="@dimen/_16sp"
+                android:text="@string/signupnow"
+                android:layout_margin="@dimen/_0dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

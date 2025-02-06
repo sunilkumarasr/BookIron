@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <com.royalit.mfd.customviews.CustomTextView
+        android:id="@+id/txt_order_child_item_name"
+        android:layout_weight="1"
+
+        android:fontFamily="@font/roboto_regular"
+        style="@style/style_textview_small"/>
+    <com.royalit.mfd.customviews.CustomTextView
+        android:id="@+id/txt_order_child_item_price"
+        style="@style/style_textview_small"
+        android:layout_margin="@dimen/_5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/color_button_bg"
+        />
+
+</LinearLayout>
